@@ -35,6 +35,11 @@ set :markdown,  :fenced_code_blocks => true,
 activate :directory_indexes
 # from directions in http://designbyjoel.com/blog/2012-10-20-building-a-blog-in-middleman/
 
+activate :deploy do |deploy|
+  deploy.method = :git
+end
+# https://github.com/tvaughan/middleman-deploy
+
 ###
 # Compass
 ###
