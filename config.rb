@@ -32,6 +32,9 @@ set :markdown,  :fenced_code_blocks => true,
                 :autolink => true,
                 :smartypants => true
 
+activate :directory_indexes
+# from directions in http://designbyjoel.com/blog/2012-10-20-building-a-blog-in-middleman/
+
 ###
 # Compass
 ###
