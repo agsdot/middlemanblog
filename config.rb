@@ -1,52 +1,9 @@
 ###
-# Blog settings
-###
-
-# Time.zone = "UTC"
-
-activate :blog do |blog|
-  blog.prefix = "blog"
-  blog.permalink = ":year/:month/:day/:title.html"
-  # blog.sources = ":year-:month-:day-:title.html"
-  # blog.taglink = "tags/:tag.html"
-  blog.layout = "blog"
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 250
-  # blog.year_link = ":year.html"
-  # blog.month_link = ":year/:month.html"
-  # blog.day_link = ":year/:month/:day.html"
-  blog.default_extension = ".markdown"
-
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
-
-  # blog.paginate = true
-  # blog.per_page = 10
-  # blog.page_link = "page/:num"
-end
-
-page "/feed.xml", :layout => false
-
-set :markdown_engine, :redcarpet
-set :markdown,  :fenced_code_blocks => true,
-                :autolink => true,
-                :smartypants => true
-
-activate :directory_indexes
-# from directions in http://designbyjoel.com/blog/2012-10-20-building-a-blog-in-middleman/
-
-activate :deploy do |deploy|
-  deploy.method = :git
-end
-# https://github.com/tvaughan/middleman-deploy
-
-###
 # Compass
 ###
 
 # Susy grids in Compass
-# First: gem install susy
-# require 'susy'
+require 'susy'
 
 # Change Compass configuration
 # compass_config do |config|
@@ -54,7 +11,22 @@ end
 # end
 
 ###
-# Page options, layouts, aliases and proxies
+# Haml
+###
+
+# CodeRay syntax highlighting in Haml
+# First: gem install haml-coderay
+# require 'haml-coderay'
+
+# CoffeeScript filters in Haml
+# First: gem install coffee-filter
+# require 'coffee-filter'
+
+# Automatic image dimensions on image_tag helper
+# activate :automatic_image_sizes
+
+###
+# Page command
 ###
 
 # Per-page layout changes:
@@ -79,21 +51,41 @@ end
 # Helpers
 ###
 
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  # Calculate the years for a copyright
+  def copyright_years(start_year)
+    end_year = Date.today.year
+    if start_year == end_year
+      start_year.to_s
+    else
+      start_year.to_s + '-' + end_year.to_s
+    end
+  end
 
-set :css_dir, 'stylesheets'
+  # Holder.js image placeholder helper
+  def img_holder(opts = {})
+    return "Missing Image Dimension(s)" unless opts[:width] && opts[:height]
+    return "Invalid Image Dimension(s)" unless opts[:width].to_s =~ /^\d+$/ && opts[:height].to_s =~ /^\d+$/
 
-set :js_dir, 'javascripts'
+    img  = "<img data-src=\"holder.js/#{opts[:width]}x#{opts[:height]}/auto"
+    img << "/#{opts[:bgcolor]}:#{opts[:fgcolor]}" if opts[:fgcolor] && opts[:bgcolor]
+    img << "/text:#{opts[:text].gsub(/'/,"\'")}" if opts[:text]
+    img << "\" width=\"#{opts[:width]}\" height=\"#{opts[:height]}\">"
 
-set :images_dir, 'images'
+    img
+  end
+
+end
+
+# Change the CSS directory
+# set :css_dir, "alternative_css_directory"
+
+# Change the JS directory
+# set :js_dir, "alternative_js_directory"
+
+# Change the images directory
+# set :images_dir, "alternative_image_directory"
 
 # Build-specific configuration
 configure :build do

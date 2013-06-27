@@ -1,9 +1,7 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem "middleman", "~> 3.1.2"
-gem "middleman-blog", "~> 3.2.0"
+gem "middleman", "~> 3.1.1"
 
-# For feed.xml.builder
-gem "builder", "~> 3.0.0"
-gem "redcarpet"
-gem "middleman-deploy"
+# Compass plugins
+gem 'susy', "~> 1.0.9" # Susy
+gem 'compass-h5bp', "~> 0.1.1" # HTML5 Boilerplate styles
