@@ -115,6 +115,7 @@ DEPENDENCIES
   bootstrap-sass
   builder (~> 3.0.0)
   compass-h5bp (~> 0.1.1)
+  haml
   middleman
   middleman-blog
   middleman-livereload

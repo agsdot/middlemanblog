@@ -15,4 +15,4 @@ gem "middleman-blog"
 gem "tzinfo"
 gem "middleman-livereload"
 gem "redcarpet"
-
+gem "haml"
