@@ -1,0 +1,6 @@
+---
+title: 2nd post
+summary: testing out middleman.
+---
+
+Just doing more experimentation.

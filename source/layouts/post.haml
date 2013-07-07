@@ -1,0 +1,35 @@
+- content_for :nav do
+  .navbar.navbar-inverse.navbar-fixed-top
+    .navbar-inner
+      .container
+        %button.btn.btn-navbar{ :type => "button", "data-toggle" => "collapse", "data-target" => ".nav-collapse" }
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.brand{ :href => "/" } Jonathan Lai
+        .nav-collapse.collapse
+          %ul.nav
+            - data.nav.main.each do |item|
+              - target = item.target if item.has_key? 'target'
+              %li
+                %a{ :href => "#{item.href}", :target => "#{target}"}= item.text
+
+- wrap_layout :layout do
+  %article
+    %h1= current_article.title
+    = yield
+
+    .meta
+      .post-date
+        %h5
+          Posted On:
+        - plain_date = current_article.date.strftime('%Y-%m-d')
+        %time{ :datetime => "#{plain_date}" }= current_article.date.strftime('%B %e, %Y')
+
+      - if current_article.tags.length > 0
+        .tags
+          %h5 Tagged:
+          %ul
+            - current_article.tags.each do |tag|
+              %li
+                %a{ :href => "/%{tag}"} ##{tag}

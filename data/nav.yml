@@ -1,0 +1,3 @@
+main:
+  - { text: "Twitter", href: "http://twitter.com/jonlai", target: "_blank" }
+  - { text: "Github", href: "http://github.com/agsdot", target: "_blank" }

@@ -13,3 +13,5 @@ future learning, and also plus as a side beneit to build a blog.
 P.s. Middleman seems like a great way to test templating languages such
 as haml scss compass and slim.  Let the experimentation begin.
 
+Uses https://github.com/dbtlr/dbtlr.com/ as a guide.  Going through his
+commit log to see how his page evolved

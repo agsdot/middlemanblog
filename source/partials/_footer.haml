@@ -1,0 +1,13 @@
+%footer
+  %p &copy; Jonathan Lai 2013
+
+/%script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js' }
+/%script
+/  window.jQuery || document.write("<script src='js/libs/jquery-1.7.2.min.js'>\x3C/script>")
+
+/[if lt IE 7]
+  = javascript_include_tag "libs/DD_belatedPNG_0.0.8a-min.js"
+  %script
+    DD_belatedPNG.fix("img, .png_bg");
+
+/= javascript_include_tag "all"

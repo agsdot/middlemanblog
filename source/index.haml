@@ -1,0 +1,30 @@
+---
+title: "Jonathan Lai"
+name: "index"
+---
+
+%header
+  %a.avatar{ :href => "/" } Jonathan Lai
+  %h2
+    %a{ :href => "/" } Jonathan Lai
+
+  %ul
+    - data.nav.main.each do |item|
+      - target = item.target if item.has_key? 'target'
+      %li
+        %a{ :href => "#{item.href}", :target => "#{target}" }= item.text
+
+#feed
+  %h3 Posts
+  %ul
+    - blog.articles[0...10].each do |article|
+      - date = article.date.strftime('%B %e, %Y')
+      - plain_date = article.date.strftime('%Y-%m-%d')
+      %li
+        %h3
+          %a{ :href => "#{article.url}" }= article.title
+        %p
+          - if article.data.summary
+            = article.data.summary
+            %a{ :href => "#{article.url}" } &#8594;
+        %time{ :datetime => "#{plain_date}" }= date
