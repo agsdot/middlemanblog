@@ -16,4 +16,5 @@ gem "bootstrap-sass"
 gem "middleman-syntax"
 gem "tzinfo"
 gem "redcarpet"
-gem "middleman-deploy"
+gem 'middleman-gh-pages'
+
