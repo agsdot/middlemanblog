@@ -53,7 +53,7 @@ end
 
 
 activate :blog do |blog|
-  blog.prefix         = "blog"
+  blog.prefix         = "/blog"
   blog.permalink      = ":title.html"
   blog.taglink        = "tags/:tag.html"
   blog.paginate       = true
