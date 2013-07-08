@@ -8,7 +8,7 @@ require 'bootstrap-sass'
 # Change Compass configuration
 compass_config do |config|
 #   config.output_style = :compact
-  config.http_path = "/"
+  config.http_path = "middlemanblog/"
   config.images_dir = "images"
   config.javascripts_dir = "javascripts"
 end
