@@ -8,7 +8,7 @@ require 'bootstrap-sass'
 # Change Compass configuration
 compass_config do |config|
 #   config.output_style = :compact
-  config.http_path = "middlemanblog/"
+  config.http_path = "/"
   config.images_dir = "images"
   config.javascripts_dir = "javascripts"
 end
@@ -53,7 +53,7 @@ end
 
 
 activate :blog do |blog|
-  blog.prefix         = "/blog"
+  blog.prefix         = "blog"
   blog.permalink      = ":title.html"
   blog.taglink        = "tags/:tag.html"
   blog.paginate       = true
