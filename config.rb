@@ -4,7 +4,7 @@ require 'bootstrap-sass'
 # Settings
 ###
 
-set :site_url, "http://agsdot.github.io/middlemanblog"
+set :site_url, "http://agsdot.github.io/middlemanblog/"
 
 ###
 # Compass
