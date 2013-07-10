@@ -10,7 +10,7 @@ For the longest of time, two plus days (yah, I know that is the longest of time,
 
 Its all in the forward slash URL baby.
 
-An href with <a href="/blog/markdownpath"> vs <a href="blog/markdownpath"> goes to the root of the installation, whereas href="blog" goes relatively into the next subdirectory.
+An href with `<a href="/blog/markdownpath">` vs `<a href="blog/markdownpath">` goes to the root of the installation, whereas href="blog" goes relatively into the next subdirectory.
 
 Good to know.  Great troubleshooting this and finding it out at a HackNight at Academia.edu tongith on 7/9/13 in SF.  Someone there also helped me remove that preceding slash with a regex.  I'll analyze the code more and explain it again with another blog post.
 
