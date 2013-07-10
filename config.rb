@@ -89,7 +89,6 @@ page "/404.html", directory_index: false
 page "/feed.xml", :layout => false
 
 
-set :relative_links, true
 
 # Build-specific configuration
 configure :build do
@@ -104,6 +103,7 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
+  set :relative_links, true
 
   # Or use a different image path
   # set :http_path, "/images/"
