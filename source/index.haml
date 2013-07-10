@@ -24,11 +24,11 @@ name: "index"
       - plain_date = article.date.strftime('%Y-%m-%d')
       %li
         %h3
-          %a{ :href => "#{article.url}" }= article.title
+          %a{ :href => "#{article.url.sub(/^\//,'')}" }= article.title
         %p
           - if article.data.summary
             = article.data.summary
-            %a{ :href => "#{article.url}" } &#8594;
+            %a{ :href => "#{article.url.sub(/^\//,'')}" } &#8594;
         %time{ :datetime => "#{plain_date}" }= date
 
 
