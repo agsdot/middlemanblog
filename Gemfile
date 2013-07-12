@@ -17,4 +17,4 @@ gem "middleman-syntax"
 gem "tzinfo"
 gem "redcarpet"
 gem 'middleman-gh-pages'
-
+gem 'middleman-disqus'

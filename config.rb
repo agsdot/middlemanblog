@@ -18,6 +18,17 @@ compass_config do |config|
   config.javascripts_dir = "javascripts"
 end
 
+configure :development do
+  activate :disqus do |d|
+    d.shortname = false
+  end
+end
+
+configure :build do
+  activate :disqus do |d|
+    d.shortname = "jonlai"
+  end
+end
 ###
 # Page options, layouts, aliases and proxies
 ###
