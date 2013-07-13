@@ -15,3 +15,5 @@ as haml scss compass and slim.  Let the experimentation begin.
 
 Uses https://github.com/dbtlr/dbtlr.com/ as a guide.  Going through his
 commit log to see how his page evolved
+
+For actually deployed blog, goto [agsdot.github.io/thoughts](http://agsdot.github.io/thoughts)
