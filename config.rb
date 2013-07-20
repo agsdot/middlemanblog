@@ -73,6 +73,7 @@ activate :blog do |blog|
   blog.permalink      = ":title.html"
   blog.taglink        = "tags/:tag.html"
   blog.paginate       = true
+  # blog.per_page       = 5
   blog.layout         = "post"
   blog.summary_length = 250
 end
