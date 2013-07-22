@@ -27,7 +27,10 @@ it.
 
 Ctrl-v then highlight the text you want to act on.  Then do the
 keybinding for i or a, to do before or after, then enter a comment text
-such as `//` or `#` .
+such as `//` or `#` . (revised: After that, type capital "I" to insert
+for all highlighted lines. Type the comment, in this case "#<Space>".
+Then hit "Esc".)  On practicing this again, I went to the [Vim Wikia](http://vim.wikia.com/wiki/Commenting_out_a_range_of_lines) and
+saw it documented once again.
 
 Interesting stuff.  And you know what, thats not such a bad way to do
 highlighting.  Manual but intuitive.  
