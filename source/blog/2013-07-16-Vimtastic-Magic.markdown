@@ -40,3 +40,6 @@ Mighty cool stuff man.
 
 
 JL
+
+P.s. This also looks like another fantastic [Vim
+Resource](http://www.oualline.com/vim/10/top_10.html)
