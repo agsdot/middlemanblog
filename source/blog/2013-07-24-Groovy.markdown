@@ -1,0 +1,15 @@
+---
+title: Groovy
+summary: time to learn a new language
+tags: groovy, learning, onlineresources
+---
+
+To learn groovy I am using [Groovy in Action, Second Edition](http://www.manning.com/koenig2/).
+
+To learn grails, I am going to following this tutorial,
+[Getting Started with Grails, Second Edition](http://www.infoq.com/minibooks/grails-getting-started)
+
+I bought the ebook for the Groovy in Action, 2nd edition.  Ebook + print
+book to follow later.
+
+Interesting language so far.  Github commits to follow later :smile:
