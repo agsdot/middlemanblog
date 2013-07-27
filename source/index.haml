@@ -20,7 +20,7 @@ pageable: true
 #feed
   %h3 Posts
   %ul
-    - blog.articles.each do |article|
+    - blog.articles[page_start..page_end].each do |article|
       - date = article.date.strftime('%B %e, %Y')
       - plain_date = article.date.strftime('%Y-%m-%d')
       %li
