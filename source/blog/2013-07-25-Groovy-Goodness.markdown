@@ -10,6 +10,12 @@ by delving into it over the past few days.
 
 + Simple ways to include testing by embedding asserts in ones code
 + A closure that can use `it` making it more concise than ruby!
+  + In ruby `1.9.3p392 :001 > (1..10).each {|x| print x}`
+  + In groovy `groovy:000> (1..10).each {print it}`
+  + Each produces the result of `12345678910`, however one was much more
+    concise
+  + In groovy, `it` is a keyword like in ruby `self` is a keyword and
+    `this` is a keyword in javascript
 
 Groovy seems not so much an analogue to other languages like python and
 ruby, but more so a great way to gain the benefits of ruby and python
