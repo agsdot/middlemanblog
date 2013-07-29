@@ -9,6 +9,7 @@ there is groovy goodness.  No not the [blog](http://mrhaki.blogspot.com/), but s
 by delving into it over the past few days.
 
 + Simple ways to include testing by embedding asserts in ones code
+  + "Groovy embeds Junit (from Java), so there is no need to set up a new dependency ([Groovy in Action, 2nd Edition](http://manning.com/koenig2/))".  Also, testing is mandatorily turned on, versus in Java where it is optional. Its really quite nice, it seems more convenient than Ruby's approach.   
 + A closure that can use `it` making it more concise than ruby!
   + In ruby `1.9.3p392 :001 > (1..10).each {|x| print x}`
   + In groovy `groovy:000> (1..10).each {print it}`
