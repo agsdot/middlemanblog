@@ -21,7 +21,7 @@ name: "index"
 #feed
   %h3 Posts
   %ul
-    - blog.articles[0...25].each do |article|
+    - blog.articles[0...30].each do |article|
       - date = article.date.strftime('%B %e, %Y')
       - plain_date = article.date.strftime('%Y-%m-%d')
       %li
