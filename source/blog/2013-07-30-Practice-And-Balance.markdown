@@ -4,7 +4,7 @@ summary: Pushing Code, Balancing out the Skill Set
 tags: Groovy, Javascript, Practice, Koans
 ---
 
-The ruby project has something called the ruby koans.  They are a great
+The ruby project has something called the [Ruby Koans](http://rubykoans.com).  They are a great
 set of practice exercises to improve ones ruby skills.
 
 While doing things with groovy, I figure that I want my javascript
