@@ -1,7 +1,6 @@
 ---
 title: First Week Apprenticeship 
-summary: Take time at Taulia to <strikethrough>Tango</strikethrough>
-Learn
+summary: Take time at Taulia to Learn 
 tags: apprenticeship, coding, taulia 
 ---
 
