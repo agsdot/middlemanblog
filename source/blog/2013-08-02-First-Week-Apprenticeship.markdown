@@ -1,7 +1,7 @@
 ---
-title: First Week Apprenticeship 
-summary: Take time at Taulia to Learn 
-tags: apprenticeship, coding, taulia 
+title: First Week Apprenticeship
+summary: Take time at Taulia to Learn
+tags: apprenticeship, coding, taulia
 ---
 
 Right now its the Friday apprentice overview/debriefing. It was quite
@@ -12,7 +12,7 @@ boxes (lol, django and python for the most part).
 I've enjoyed the week.  Groovy is a distinctive enough language to pose
 a learning challenge.  Python too is a distinctive language, no
 negatives there. But what I mean it is a much less closely related to
-ruby (python and ruby syntax and type of language is much closer related).  Groovy will be a nice challenge to learn another language and environment, but also on the side learning the base layer language of Java.  
+ruby (python and ruby syntax and type of language is much closer related).  Groovy will be a nice challenge to learn another language and environment, but also on the side learning the base layer language of Java.
 
 I'm enjoying working with two other people from WDI. Its fun sharing
 experiences, but also pair programming sometimes and comparing ideas on

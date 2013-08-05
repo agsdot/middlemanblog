@@ -1,7 +1,7 @@
 ---
 title: Acceleration blog
 summary: Things are speeding up (or rather picking up velocity)
-tag: Code, Speed, roadblocks-smashed
+tags: Code, Speed, roadblocks-smashed
 ---
 
 Ok folks, what is the definition of acceleration?  A change in velocity, speed plus a vector value.  Not a physics major or studier by any means, but yes things are picking up speed or velocity in the correct direction...forwards.

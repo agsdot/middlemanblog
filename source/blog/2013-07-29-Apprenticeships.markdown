@@ -1,7 +1,7 @@
 ---
 title: Apprenticeships
 summary: And off the WDI graduates go!
-tag: apprentice, intern, learning, start
+tags: apprentice, intern, learning, start
 ---
 
 Today, many of us WDI graduates started our three month apprenticeship.
@@ -14,10 +14,10 @@ Such is the latter case, today I was able to join up with two other WDI
 grads, and we started our three month apprenticeship at Taulia.  We got
 situated early on in the day, went to a couple meetings. Learned the
 names of people, some of the basic systems (email, etc), and went for
-lunch at a local food truck (yum :) ).  
+lunch at a local food truck (yum :) ).
 
 However, most of the day can be characterized in what someone responded
-to our GA coordinators question of "How was your first day??!" 
+to our GA coordinators question of "How was your first day??!"
 
 `"spent all day configuring my dev environment...still (somewhat) working
 on it"`
