@@ -1,5 +1,5 @@
 ---
-title:Git Configuration and Management
+title: Git Configuration and Management
 summary: Git, and how to git and continue to git it going...
 tags: git, ssh, workflow
 ---
