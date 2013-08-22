@@ -1,5 +1,4 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
+
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.1.3"
@@ -17,4 +16,4 @@ gem "middleman-syntax"
 gem "tzinfo"
 gem "redcarpet"
 gem 'middleman-gh-pages'
-gem 'middleman-disqus'
+# gem 'middleman-disqus'
