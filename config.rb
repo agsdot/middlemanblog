@@ -121,6 +121,6 @@ configure :build do
   # set :http_path, "/images/"
 end
 
-# activate :deploy do |deploy|
-#   deploy.method = :git
-# end
+activate :deploy do |deploy|
+  deploy.method = :git
+end
