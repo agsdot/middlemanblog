@@ -1,5 +1,5 @@
 ---
-title: Whoa! Vimrc Config Shortcuts 
+title: Whoa! Vimrc Config Shortcuts
 summary: Amazing!!! Yes Amazing!!! A Shortcut to learning cryptic vim configs!
 tags: Vim, Vi, Vimrc
 ---
@@ -12,7 +12,7 @@ I present the solution.  [Brian Leroux's Quick Vim](https://github.com/brianlero
 
 JL
 
-P.s. It really doesn't matter what directory you clone the project from, just remember where you did it. You know, the first lines of the instruction "git clone git://github.com/brianleroux/quick-vim.git" .  Thats the only lines of the project I wondered* about. Easy answer!
+P.s. It really doesn't matter what directory you clone the project from, just remember where you did it. You know, the first lines of the instruction `git clone git://github.com/brianleroux/quick-vim.git` .  Thats the only lines of the project I wondered* about. Easy answer!
 
 P.s.s. Yah, yah, yah, I know I've been just prodding do it do it.  But when you do it, clone Brian's github not mine.  Mines got customizations for ruby syntax, groovy syntax, solarized light, and line numbering. Customize it to your liking :)
 
