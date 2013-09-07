@@ -1,8 +1,8 @@
 ---
 title: "Jonathan Lai"
 name: "index"
-/ pageable: true
-/ per_page: 10
+pageable: true
+per_page: 4
 ---
 
 %header
@@ -16,21 +16,35 @@ name: "index"
       %li
         %a{ :href => "#{item.href}", :target => "#{target}" }= item.text
 
-/ #{link_to 'Test', 'blog/Hello-Middleman/'}
-
 #feed
   %h3 Posts
-  %ul
-    - blog.articles[0...30].each do |article|
+  - if paginate
+    - if prev_page
+      %p
+        Page #{page_number} of #{num_pages}
+      %p= link_to 'Previous page', prev_page
+  
+  %ul  
+    - page_articles.each_with_index do |article, i|
       - date = article.date.strftime('%B %e, %Y')
-      - plain_date = article.date.strftime('%Y-%m-%d')
-      %li
-        %h3
-          %a{ :href => "#{article.url.sub(/^\//,'')}" }= article.title
+      - plain_date = article.date.strftime('%Y-%m-%d') 
+
+      %li 
+        %h3= link_to article.title, article
         %p
           - if article.data.summary
             = article.data.summary
             %a{ :href => "#{article.url.sub(/^\//,'')}" } &#8594;
         %time{ :datetime => "#{plain_date}" }= date
 
+      
+
+
+
+
+
+
+  - if paginate
+    - if next_page
+      %p= link_to 'Next page', next_page
 
