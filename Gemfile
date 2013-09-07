@@ -18,3 +18,6 @@ gem "redcarpet"
 # gem 'middleman-gh-pages'
 # gem 'middleman-disqus'
 gem 'middleman-deploy'
+
+gem "nokogiri", "~> 1.6.0"
+gem "thin"
