@@ -76,6 +76,7 @@ activate :blog do |blog|
   blog.per_page       = 5
   blog.layout         = "post"
   blog.summary_length = 250
+  blog.tag_template = "tag.html"
 end
 
 
