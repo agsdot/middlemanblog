@@ -6,9 +6,9 @@ per_page: 4
 ---
 
 %header
-  %a.avatar{ :href => "/" } Jonathan Lai
+  %a.avatar{ :href => site_url } Jonathan Lai
   %h2
-    %a{ :href => "/" } Jonathan Lai
+    %a{ :href => site_url } Jonathan Lai
 
   %ul
     - data.nav.main.each do |item|
@@ -23,13 +23,13 @@ per_page: 4
       %p
         Page #{page_number} of #{num_pages}
       %p= link_to 'Previous page', prev_page
-  
-  %ul  
+
+  %ul
     - page_articles.each_with_index do |article, i|
       - date = article.date.strftime('%B %e, %Y')
-      - plain_date = article.date.strftime('%Y-%m-%d') 
+      - plain_date = article.date.strftime('%Y-%m-%d')
 
-      %li 
+      %li
         %h3= link_to article.title, article
         %p
           - if article.data.summary
@@ -37,7 +37,7 @@ per_page: 4
             %a{ :href => "#{article.url.sub(/^\//,'')}" } &#8594;
         %time{ :datetime => "#{plain_date}" }= date
 
-      
+
 
 
 
