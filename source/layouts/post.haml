@@ -30,8 +30,9 @@
         .tags
           %h5 Tagged:
           %ul
-            / - current_article.tags.each do |tag|
-            /   %li
-            /     %a{ :href => "/%{tag}"} ##{tag}
 
-            = current_page.tags.map { |tag| link_to tag, tag_path(tag) }.join(', ')
+            /= current_page.tags.map { |tag| link_to tag, tag_path(tag) }.join(', ')
+            /%p
+
+            = current_page.tags.map { |tag| link_to tag, site_url + "blog/tags/" + tag }.join(', ')
+
