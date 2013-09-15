@@ -1,0 +1,11 @@
+---
+layout: post
+title: Woot woot!
+tags: 
+---
+I’ve got me-self a google maps location finder app.  Just created it in rails today. 
+Used both the geocoder Ruby gem and the Google Maps API in JSON to access the data I needed.  The site doesn’t yet look pretty, and I still need to configure the order of the pages and the buttons, but the content is pretty much all there!
+Tis been a busy past couple days.  Learned a lot about rails, but still oh so much to learn.  Areas where its fuzzy, and moments when you realize, oh params.inspect yield you all the information coming to and thru the webpage.  It just dawns on you, why you can also use the params hash to retrieve data from the URL Bar, and a previous GET.
+Argabathon, I feel good. But it is also 11:30.  Need to do a little more study and then turn in.
+
+JL

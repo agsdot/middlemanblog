@@ -1,0 +1,9 @@
+---
+layout: post
+title: Thoughts
+tags: 
+---
+Last week we delved into js items: backbone and node.  Node and sockets io seemed to make more sense.  Perhaps I’ll just have to review the manuals more later for both.
+This week we are working on a small project to complete a portolio for this upcoming week.  To keep y’all hanging, I’m working on a site with Impress.js .
+…
+hanging…

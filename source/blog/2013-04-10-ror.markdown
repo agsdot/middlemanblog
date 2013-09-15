@@ -1,0 +1,11 @@
+---
+layout: post
+title: RoR
+tags: 
+---
+We covered Sinatra last week, a lightweight Ruby framework.
+We did a couple things to polish off two projects, and pushed one of them to Heroku today. That was quite fun.
+Then we extended a compartmentalized concepts from Sinatra to extend to Ruby on Rails a la RoR. Today was the first day for that. Routes, and routing.  Models for business logic.  Actions inside the controller, which glues it all together. And views which pretty much same the same.
+A lot of it has to do with matching names together across the different components, and knowing which files to edit.  RoR is powerful.  Sinatra is crisp.  But for big projects, I would definitely want to go with Rails.
+Just a quick thought this evening, after a long packed day.
+JL

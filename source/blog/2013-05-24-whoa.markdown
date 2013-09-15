@@ -1,0 +1,6 @@
+---
+layout: post
+title: Whoa...
+tags: 
+---
+Right now listening to an informal talk by Rails Core Team member Santiago Pastorino (github).  Wow….
