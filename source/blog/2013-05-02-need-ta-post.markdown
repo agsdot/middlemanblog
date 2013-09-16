@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Need ta post
 tags: 
 ---

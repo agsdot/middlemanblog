@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mid-Program Update
 tags: 
 ---

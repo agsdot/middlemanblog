@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Website with Impress.js
 tags: 
 ---
