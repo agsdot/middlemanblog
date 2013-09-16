@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Recap on Github visit
 tags: 
 ---
