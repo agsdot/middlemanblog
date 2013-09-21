@@ -1,0 +1,12 @@
+---
+title: D3 js
+summary: Great javascript visualization library
+tags: d3, javascript, svg
+---
+
+[D3](http://d3js.org/) sure is a great library to practice building websites with. D3 is a javascript library that builds [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics) objects in the DOM.  
+
+Mighty cool stuff.  Created a new repo at [d3fun](https://github.com/agsdot/d3fun).  Really fun starting to practice with thie js code base.  
+
+
+JL
