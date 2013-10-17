@@ -1,0 +1,17 @@
+---
+title: Emacs
+summary: Text editors and who uses what...
+tags: emacs, vim, texteditors, cli
+---
+Ok folks, here's where the hard news hits.  Cold hart facts: Matz and Guido use Emacs. 
+
+What is there about it?  Is it because it's super extensible--Emacs Lisp is a great backend language? Honestly, what is it?  Why do they prefer and ultimately use that editor? 
+
+Vim, I like the keybindings for navigating left right up and down right now.  Emacs navigation keys are a bit different, vim's seem more intuitive h j k l plain and simple. I've gone thru barely half a tutorial for Emacs, and it seems like there's a lot of Meta and Ctrl. 
+
+Is it the power of Vimscript vs Emacs Lisp?  Don't know, but there gotta be something to Emacs if both the inventors of Ruby and Python use the little project that RMS made.
+
+I'm going to give learning Emacs another try. I gotta find another good/better tutorial to get up to speed on that editor. 
+
+JL
+
