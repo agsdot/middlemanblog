@@ -1,0 +1,23 @@
+---
+title: Shoes and S3
+summary: Cold weather and tapping away at that cloud
+tags: travel, michigan, midwest, shoes, aws, amazon, s3
+---
+
+Got a new pair of shoes.  This extremem weather didn't treat an old pair of boots too kindly. That and not wearing the boots for more than half a decade.  Boots will need to be resoled later on, in the meantime went to a shoe store in Ann Arbor and picked up some hiking boots. Tis nice to step around with some shoes with a firm foundation.  You don't know how much you miss it till its lacking.  Its so nice to have solid shoes to wear once again.
+
+Experimented more with S3.  Already have a website put up their.  Just trying to alias nameservers and my host to the correct stuff, for lack of better words, on AWS S3 and Route 53.
+
+Interesting stuff.  Got a domain half working.  Super excited.  Need to now polish it off.
+
+Hum...other goals to get down?
+
+- get comments working on a middleman app blog
+- change my static purecss sites into middleman apps.  That should be a challenge but fun.
+
+Yup, thats about it.  In the meantime, here's to enjoying cold Michigan weather, and trying out some midwest food (Blue and Maize delicatessen) and Frita Batidos (I know its not midwestern food per se, but good nonetheless).
+
+Cheers folks!
+
+
+JL
