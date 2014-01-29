@@ -11,7 +11,9 @@ gem "middleman-blog", "~> 3.5.1"
 # For feed.xml.builder
 gem "builder", "~> 3.0.0"
 
-gem "bootstrap-sass", "~> 2.3.2.2"
+# gem "bootstrap-sass", "~> 2.3.2.2"
+gem "bootstrap-sass", "~> 3.0.3.0"
+
 gem "middleman-syntax"
 gem "tzinfo"
 gem "redcarpet"

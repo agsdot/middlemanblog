@@ -1,18 +1,21 @@
 - content_for :nav do
-  .navbar.navbar-inverse.navbar-fixed-top
-    .navbar-inner
-      .container
-        %button.btn.btn-navbar{ :type => "button", "data-toggle" => "collapse", "data-target" => ".nav-collapse" }
+  %nav.navbar.navbar-inverse{role: "navigation"}
+    .container
+      / Brand and toggle get grouped for better mobile display
+      .navbar-header
+        %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+          %span.sr-only Toggle navigation
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        %a.brand{ :href => site_url } Jonathan Lai
-        .nav-collapse.collapse
-          %ul.nav
-            - data.nav.main.each do |item|
-              - target = item.target if item.has_key? 'target'
-              %li
-                %a{ :href => "#{item.href}", :target => "#{target}"}= item.text
+        %a.navbar-brand{ :href => site_url } Jonathan Lai
+      / Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        %ul.nav.navbar-nav
+          - data.nav.main.each do |item|
+            - target = item.target if item.has_key? 'target'
+            %li
+              %a{ :href => "#{item.href}", :target => "#{target}"}= item.text
 
 - wrap_layout :layout do
   %article
@@ -56,6 +59,3 @@
     %a.dsq-brlink{href: "http://disqus.com"}
       comments powered by
       %span.logo-disqus Disqus
-
-
-
