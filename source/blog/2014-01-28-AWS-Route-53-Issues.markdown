@@ -19,3 +19,9 @@ Why, why, why Route 53 AWS domain services do you so treat me.  I've read throug
 Never, have I called a company on this, normally googling stuff.  Maybe I'll contact other people that have done AWS especially domain aliasing. Then at last resort call them folks in WA state.
 
 JL
+
+*Update 1/29/14*
+
+Ai yah!!!! My my my!  It now works!!! Didn't change anything from last night.  I think somehow the DNS settings just took hold.  I'll document it in a future post.  For reals folks, lol, I know their have been half promised posts before, but this one deserves documenting!!!
+
+Yippee!!!!
