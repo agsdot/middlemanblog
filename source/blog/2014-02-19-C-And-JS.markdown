@@ -1,0 +1,13 @@
+---
+title: C and JS
+summary: Fun with Languages
+tags: c, javascript
+---
+
+Having fun following Zed Shaws Learn Code the Hard Way series for C.  Also having fun following some Expressjs tutorials for scraping a website. Fun stuff, I recommend.
+
+- [Learn C the Hard Way](http://c.learncodethehardway.org/book/)
+- [Handling AJAX Calls With Node.js and Express (Scraping Craigslist)](http://mherman.org/blog/2013/10/20/handling-ajax-calls-with-node-dot-js-and-express-scraping-craigslist/)
+
+JL
+
