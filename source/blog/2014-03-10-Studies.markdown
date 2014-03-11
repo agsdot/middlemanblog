@@ -1,0 +1,18 @@
+---
+title: Studies
+summary: javascript, coding, meanderings and readings ...
+tags: expressjs, node, javascript
+---
+
+Been reading and doing a lot of stuff with Expressjs over the past few days.  Also interesting to learn and read a javascript book by Azat Mardanov. Originally I bought one book that came bundled with three of his previous books. The "Express JS Guide" was the flagship of the book series bundle. Anyhow, I came across and started reading his "Oh My Javascript book." Even though its a compilation of javascript blog entries and websites from various sources and authors, I must say it has been fantastic to get a greater grasp of javascript.  Some stuff is over my head, but some stuff is just right -- the stuff over my head, I haven't encountered yet or used, such as AMD and requirejs stuff.  But fascinating just fascinating.
+
+Also been reading over the Addy Osmani book series on Backbone Fundamentals.  Just google it, its free open source and hosted on github.  Been reading it live off of github vs the pdf production, I figure its more up to date.  Its really interesting stuff.
+
+Now just gotta keep learning and see how it ties in all with frameworks and templating languages.  E.g. express, and handlebars or underscore or whatever templating language.
+
+To see how json data is transformed is rendered and loaded. Interesting stuff.
+
+Plenty of material for reading up on and watching youtube video series on.  Onward ho....
+
+
+JL
