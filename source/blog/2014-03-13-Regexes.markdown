@@ -1,0 +1,15 @@
+---
+title: Regexes
+summary: Oh the things you can string...
+tags: regularexpressions, cli, commandline, sed 
+---
+
+Man, some powerful stuff.
+
+Regular expressions.  Used in combination with themself and other commandline tools like sed, man super sweet with what it can do.
+
+Mighty cryptic though getting it down and practicing it.
+
+Thats why I'm glad there's this here site for testing them out. Behold, [Rubular](http://rubular.com/).  Good stuff indeed.
+
+JL
