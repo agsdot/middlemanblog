@@ -23,3 +23,8 @@ Excited. Lets see how long this install and migration takes place.
 
 
 JL
+
+*Update*
+Put in the new Samsung SSD. Not bad, actually relatively easy. Getting the OS reinstalled was more timetaking. Stil configuring it. Getting a Maverick USB install drive was more of a challenge. Still trying to figure it out. Had to do a recovery, put in new SSD internet recovery to 10.8. Updated it to 10.9.  Then put in XCode, rbenv, and trim support commands. Not bad.  Will take a day or to more to get the mac side up to speed -- got the original HDD in an external enclosure now. Will migrate data eventually.
+
+Oh yah, got me some middleman reinstalled.  Woot woot!
