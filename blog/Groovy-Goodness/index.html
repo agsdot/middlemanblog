@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='Jonathan Lai' name='author'>
+    <meta content="Jonathan Lai's personal portfolio and blog. Web developer, gadget geek, writer of code" name='description'>
+    <meta content='Jonathan Lai, Web Development, Ruby, Ruby on Rails, CSS, JavaScript, Code' name='keywords'>
+    <title>Groovy Goodness</title>
+    <link href="../../stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body class='blog blog_Groovy-Goodness blog_Groovy-Goodness_index'>
+    <nav class='navbar navbar-inverse' role='navigation'>
+      <div class='container'>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='http://agsdot.github.io/thoughts/'>Jonathan Lai</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+          <ul class='nav navbar-nav'>
+            <li>
+              <a href='http://twitter.com/jonlai' target='_blank'>Twitter</a>
+            </li>
+            <li>
+              <a href='http://github.com/agsdot' target='_blank'>Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class='container' id='container'>
+      <article>
+        <h1>Groovy Goodness</h1>
+        <p>Oh taste and see that the groovy language is good?  I suppose so, yes,
+        there is groovy goodness.  No not the <a href="http://mrhaki.blogspot.com/">blog</a>, but some things I&rsquo;ve learned
+        by delving into it over the past few days.</p>
+        
+        <ul>
+        <li>Simple ways to include testing by embedding asserts in ones code
+        
+        <ul>
+        <li>&ldquo;Groovy embeds Junit (from Java), so there is no need to set up a new dependency (<a href="http://manning.com/koenig2/">Groovy in Action, 2nd Edition</a>)&rdquo;.  Also, testing is mandatorily turned on, versus in Java where it is optional. Its really quite nice, it seems more convenient than Ruby&rsquo;s approach.<br></li>
+        </ul></li>
+        <li>A closure that can use <code>it</code> making it more concise than ruby!
+        
+        <ul>
+        <li>In ruby <code>1.9.3p392 :001 &gt; (1..10).each {|x| print x}</code></li>
+        <li>In groovy <code>groovy:000&gt; (1..10).each {print it}</code></li>
+        <li>Each produces the result of <code>12345678910</code>, however one was much more
+        concise</li>
+        <li>In groovy, <code>it</code> is a keyword like in ruby <code>self</code> is a keyword and
+        <code>this</code> is a keyword in javascript</li>
+        </ul></li>
+        </ul>
+        
+        <p>Groovy seems not so much an analogue to other languages like python and
+        ruby, but more so a great way to gain the benefits of ruby and python
+        scripting on top of the Java JVM.  Groovy and Java go hand in hand.</p>
+        
+        <p>Learning groovy seems like its a better way to learn and use Java.  And
+        from that perspective, I don&rsquo;t feel as much as if I&rsquo;m bound by java&rsquo;s
+        personality and rules, but rather learning java in all its goodness but
+        with an extra toolbelt called groovy.</p>
+        
+        <p>JL</p>
+        <div class='meta'>
+          <div class='post-date'>
+            <h5>
+              Posted On:
+            </h5>
+            <time datetime='2013-07-d'>July 25, 2013</time>
+          </div>
+          <div class='tags'>
+            <h5>Tagged:</h5>
+            <ul>
+              <!-- = current_page.tags.map { |tag| link_to tag, tag_path(tag) }.join(', ') -->
+              <!-- %p -->
+              <a href="http://agsdot.github.io/thoughts/blog/tags/groovy">groovy</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/learning">learning</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/languages">languages</a>
+            </ul>
+          </div>
+        </div>
+        <div class='other'></div>
+        <p>&#32;</p>
+        <div id='disqus_thread'></div>
+        <script>
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'agsdotgithubthoughts'; // required: replace example with your forum shortname
+          
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>
+          Please enable JavaScript to view the
+          <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+        </noscript>
+        <a class='dsq-brlink' href='http://disqus.com'>
+          comments powered by
+          <span class='logo-disqus'>Disqus</span>
+        </a>
+      </article>
+    </div>
+    <footer>
+      <p>&copy; Jonathan Lai 2013</p>
+    </footer>
+    <!-- %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js' } -->
+    <!-- %script -->
+    <!-- window.jQuery || document.write("<script src='js/libs/jquery-1.7.2.min.js'>\x3C/script>") -->
+    <!--[if lt IE 7]>
+      <script src="../../javascripts/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+      <script>
+        DD_belatedPNG.fix("img, .png_bg");
+      </script>
+    <![endif]-->
+    <!-- = javascript_include_tag "libs/jquery-1.10.2.min.js" -->
+    <!-- = javascript_include_tag "all" -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <!-- = disqus -->
+  </body>
+</html>
+

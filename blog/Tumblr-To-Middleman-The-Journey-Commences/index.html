@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='Jonathan Lai' name='author'>
+    <meta content="Jonathan Lai's personal portfolio and blog. Web developer, gadget geek, writer of code" name='description'>
+    <meta content='Jonathan Lai, Web Development, Ruby, Ruby on Rails, CSS, JavaScript, Code' name='keywords'>
+    <title>Tumblr To Middleman The Journey Commences</title>
+    <link href="../../stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body class='blog blog_Tumblr-To-Middleman-The-Journey-Commences blog_Tumblr-To-Middleman-The-Journey-Commences_index'>
+    <nav class='navbar navbar-inverse' role='navigation'>
+      <div class='container'>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='http://agsdot.github.io/thoughts/'>Jonathan Lai</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+          <ul class='nav navbar-nav'>
+            <li>
+              <a href='http://twitter.com/jonlai' target='_blank'>Twitter</a>
+            </li>
+            <li>
+              <a href='http://github.com/agsdot' target='_blank'>Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class='container' id='container'>
+      <article>
+        <h1>Tumblr To Middleman The Journey Commences</h1>
+        <p>Oh yeah!!! I did it, I&rsquo;ve done the first step, probably the biggest/most major step in getting all my posts from Tumblr to Markdown.  I leeched off (yes a very vivid word, I&rsquo;m searching for a more fine tuned benevelont term, but that&rsquo;ll have to do for now) the post from Tumblr in Markdown format?</p>
+        
+        <p>How you say?  Well, I googled for Tumblr &gt; Middleman exporters or importers or what have you.  Didn&rsquo;t find them.  </p>
+        
+        <p>So what do you do? You go in the round-about fashion and you make it work anyway.  This is/was the plan. I setup a temp jekyll instance. Then I used a jekyll-import gem, and collected all my posts from Tumblr in Markdown format. Little wiggle, jiggle, and I got it to work.  Then used a cool bash script to rename the files from *.md to *.markdown.  Pretty nifty, eh?</p>
+        
+        <p>I&rsquo;ll give the details later.</p>
+        
+        <p>JL</p>
+        
+        <p>P.s. Yes details and perhaps the scripts will follow later. Also, need to polish off those 20 plus imported posts. Formatting stuff, link stuff, tags. Minor things.  Majority/brunt of the work is done. Tada!</p>
+        
+        <p>P.s.s. Ok fine fine, lol, more so I can remember/record the bash script for renaming things, here goes  </p>
+        
+        <p><code>for file in *.md ; do mv $file</code>echo $file | sed &rsquo;s/(.*.)md/\1markdown/&lsquo;<code>; done</code></p>
+        
+        <p>I found it on this stacksoverflow <a href="http://stackoverflow.com/questions/9590935/change-extension-of-file-using-shell-script">post</a></p>
+        
+        <p>Just apply it in the directory of interest.  Had a folder with a bunch of .md files.  Applied it with bash in the terminal, then they were all renamed.  Cool stuff, Mr. Bourne Again Shell (Script Terminal).</p>
+        <div class='meta'>
+          <div class='post-date'>
+            <h5>
+              Posted On:
+            </h5>
+            <time datetime='2013-09-d'>September 14, 2013</time>
+          </div>
+          <div class='tags'>
+            <h5>Tagged:</h5>
+            <ul>
+              <!-- = current_page.tags.map { |tag| link_to tag, tag_path(tag) }.join(', ') -->
+              <!-- %p -->
+              <a href="http://agsdot.github.io/thoughts/blog/tags/migrations">Migrations</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/blogs">Blogs</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/tumblr">Tumblr</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/middleman">Middleman</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/jekyll">Jekyll</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/markdown">Markdown</a>
+            </ul>
+          </div>
+        </div>
+        <div class='other'></div>
+        <p>&#32;</p>
+        <div id='disqus_thread'></div>
+        <script>
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'agsdotgithubthoughts'; // required: replace example with your forum shortname
+          
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>
+          Please enable JavaScript to view the
+          <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+        </noscript>
+        <a class='dsq-brlink' href='http://disqus.com'>
+          comments powered by
+          <span class='logo-disqus'>Disqus</span>
+        </a>
+      </article>
+    </div>
+    <footer>
+      <p>&copy; Jonathan Lai 2013</p>
+    </footer>
+    <!-- %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js' } -->
+    <!-- %script -->
+    <!-- window.jQuery || document.write("<script src='js/libs/jquery-1.7.2.min.js'>\x3C/script>") -->
+    <!--[if lt IE 7]>
+      <script src="../../javascripts/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+      <script>
+        DD_belatedPNG.fix("img, .png_bg");
+      </script>
+    <![endif]-->
+    <!-- = javascript_include_tag "libs/jquery-1.10.2.min.js" -->
+    <!-- = javascript_include_tag "all" -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <!-- = disqus -->
+  </body>
+</html>
+

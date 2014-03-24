@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='Jonathan Lai' name='author'>
+    <meta content="Jonathan Lai's personal portfolio and blog. Web developer, gadget geek, writer of code" name='description'>
+    <meta content='Jonathan Lai, Web Development, Ruby, Ruby on Rails, CSS, JavaScript, Code' name='keywords'>
+    <title>Hello Statica Blogrolling</title>
+    <link href="../../stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body class='blog blog_Hello-Middleman blog_Hello-Middleman_index'>
+    <nav class='navbar navbar-inverse' role='navigation'>
+      <div class='container'>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='http://agsdot.github.io/thoughts/'>Jonathan Lai</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+          <ul class='nav navbar-nav'>
+            <li>
+              <a href='http://twitter.com/jonlai' target='_blank'>Twitter</a>
+            </li>
+            <li>
+              <a href='http://github.com/agsdot' target='_blank'>Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class='container' id='container'>
+      <article>
+        <h1>Hello Statica Blogrolling</h1>
+        <p>Ok folks, so here&rsquo;s the main goal.  Consolidate the blog entries off of tumblr and wordpress and onto middleman.</p>
+        
+        <p>Several reasons:</p>
+        
+        <p>1) Tumblr, well all your bases are belong to me.  Yahoo, no, yahoo no.</p>
+        
+        <p>2) Wordpress, php, why learn a language that I have no need of now?  I&rsquo;ve been learning ruby for the last three months.  I want to dig deep into rb and js, not php.  Maybe later but not now.</p>
+        
+        <p>3) Static blogs are secure.  No database insecurities, issues with caching.  Simpler site, simpler technology, simpler to scale.  Less points of attack.</p>
+        
+        <p>4) Experiment with a rb static blog (obviously choice of middlemanapp is present now), but also experiment with commenting systems such as disqus (most likely candidate) or livefyre.</p>
+        
+        <p>5) Middleman is a great system to learn templating languages and file types used often in the ruby community: markdown/md, haml, slim, erb.  Practice them when I use rails, and practice them when I don&rsquo;t. Practice them on a daily basis when I blog.</p>
+        
+        <p>Jonathan Lai</p>
+        
+        <p>P.s. Added benefit, of learning how the importers exporters are used on tumblr and wordpress, migrating to a static based system, and this systems more portable.  Can use on S3 buckets, dropbox, and other places for hosting of html static files and can use markdown.</p>
+        <div class='meta'>
+          <div class='post-date'>
+            <h5>
+              Posted On:
+            </h5>
+            <time datetime='2013-07-d'>July  7, 2013</time>
+          </div>
+          <div class='tags'>
+            <h5>Tagged:</h5>
+            <ul>
+              <!-- = current_page.tags.map { |tag| link_to tag, tag_path(tag) }.join(', ') -->
+              <!-- %p -->
+              <a href="http://agsdot.github.io/thoughts/blog/tags/learning">learning</a>
+            </ul>
+          </div>
+        </div>
+        <div class='other'></div>
+        <p>&#32;</p>
+        <div id='disqus_thread'></div>
+        <script>
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'agsdotgithubthoughts'; // required: replace example with your forum shortname
+          
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>
+          Please enable JavaScript to view the
+          <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+        </noscript>
+        <a class='dsq-brlink' href='http://disqus.com'>
+          comments powered by
+          <span class='logo-disqus'>Disqus</span>
+        </a>
+      </article>
+    </div>
+    <footer>
+      <p>&copy; Jonathan Lai 2013</p>
+    </footer>
+    <!-- %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js' } -->
+    <!-- %script -->
+    <!-- window.jQuery || document.write("<script src='js/libs/jquery-1.7.2.min.js'>\x3C/script>") -->
+    <!--[if lt IE 7]>
+      <script src="../../javascripts/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+      <script>
+        DD_belatedPNG.fix("img, .png_bg");
+      </script>
+    <![endif]-->
+    <!-- = javascript_include_tag "libs/jquery-1.10.2.min.js" -->
+    <!-- = javascript_include_tag "all" -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <!-- = disqus -->
+  </body>
+</html>
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='Jonathan Lai' name='author'>
+    <meta content="Jonathan Lai's personal portfolio and blog. Web developer, gadget geek, writer of code" name='description'>
+    <meta content='Jonathan Lai, Web Development, Ruby, Ruby on Rails, CSS, JavaScript, Code' name='keywords'>
+    <title>Vagrant Setup</title>
+    <link href="../../stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body class='blog blog_Vagrant-Setup blog_Vagrant-Setup_index'>
+    <nav class='navbar navbar-inverse' role='navigation'>
+      <div class='container'>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='http://agsdot.github.io/thoughts/'>Jonathan Lai</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+          <ul class='nav navbar-nav'>
+            <li>
+              <a href='http://twitter.com/jonlai' target='_blank'>Twitter</a>
+            </li>
+            <li>
+              <a href='http://github.com/agsdot' target='_blank'>Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class='container' id='container'>
+      <article>
+        <h1>Vagrant Setup</h1>
+        <p>Wow, just wow.  I spent the past two days (luckily nothing today, or else my brain just might bust) setting up a <a href="http://downloads.vagrantup.com/">vagrant setup</a> for development.  Saturday and Sunday, and learning a whole lot.</p>
+        
+        <p>I setup a <a href="https://wiki.ubuntu.com/PrecisePangolin">ubuntu</a> precise pangolin 64 virtual machine box (using <a href="https://www.virtualbox.org/">virtualbox</a>) for basic tools (make, curl, git, etc), nodejs, ruby, and python.  Also thru in a bit of quick-vim for kicks as well.  Now, I can say that I have used shell scripts and implemented them on a small scale.  </p>
+        
+        <p>Go on, check it out.  After you install virtualbox, Clone the following repo and implement it.</p>
+        
+        <p><code>git clone git@github.com:agsdot/vagrant_precise64.git</code></p>
+        
+        <p>Basically three commands you need to know:
+        <code>vagrant up</code>
+        <code>vagrant suspend or vagrant halt</code>
+        <code>vagrant destroy</code></p>
+        
+        <p>You&rsquo;ll be raring to go.</p>
+        
+        <p>JL</p>
+        
+        <p>P.s. Point of not, yes clone the repo, but reset to the commit thats around 9/1/13, as those are the current commits using just a vagrant file and shell scripts. Who knows, in the future, I may try to implement something like chef.  </p>
+        
+        <p>P.s.s.<br>
+        -For node, I used <a href="https://github.com/creationix/nvm">Node Version Manager</a> from Tim Caswell (<a href="https://github.com/creationix">creationix</a>)<br>
+        -For ruby, I used <a href="https://github.com/sstephenson/rbenv">rbenv</a> and <a href="https://github.com/sstephenson/ruby-build">ruby-build</a>.  I found that it setup easier than rvm. Moreso because of permissions.<br>
+        -For python, <a href="http://www.virtualenv.org/en/latest/">Virtualenv</a> and <a href="https://pypi.python.org/pypi/pip">Pip</a></p>
+        
+        <p>P.s.s.s. I found that yes, putting together the right shell script was important. But also permissions!  When one vagrant up&rsquo;s a box, it is under root permissions. Then if your installing under the root account, you have to make sure that things are accessible under the normal vagrant home user account in ~/ (/home/vagrant).  Have to make sure that ~/ in my scripts was always hardcoded to $HOME/something_something, where $HOME equated to /home/vagrant rather than /root/</p>
+        <div class='meta'>
+          <div class='post-date'>
+            <h5>
+              Posted On:
+            </h5>
+            <time datetime='2013-09-d'>September  2, 2013</time>
+          </div>
+          <div class='tags'>
+            <h5>Tagged:</h5>
+            <ul>
+              <!-- = current_page.tags.map { |tag| link_to tag, tag_path(tag) }.join(', ') -->
+              <!-- %p -->
+              <a href="http://agsdot.github.io/thoughts/blog/tags/vagrant">vagrant</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/deployment">deployment</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/development">development</a>, <a href="http://agsdot.github.io/thoughts/blog/tags/ops">ops</a>
+            </ul>
+          </div>
+        </div>
+        <div class='other'></div>
+        <p>&#32;</p>
+        <div id='disqus_thread'></div>
+        <script>
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'agsdotgithubthoughts'; // required: replace example with your forum shortname
+          
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>
+          Please enable JavaScript to view the
+          <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+        </noscript>
+        <a class='dsq-brlink' href='http://disqus.com'>
+          comments powered by
+          <span class='logo-disqus'>Disqus</span>
+        </a>
+      </article>
+    </div>
+    <footer>
+      <p>&copy; Jonathan Lai 2013</p>
+    </footer>
+    <!-- %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js' } -->
+    <!-- %script -->
+    <!-- window.jQuery || document.write("<script src='js/libs/jquery-1.7.2.min.js'>\x3C/script>") -->
+    <!--[if lt IE 7]>
+      <script src="../../javascripts/libs/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+      <script>
+        DD_belatedPNG.fix("img, .png_bg");
+      </script>
+    <![endif]-->
+    <!-- = javascript_include_tag "libs/jquery-1.10.2.min.js" -->
+    <!-- = javascript_include_tag "all" -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <!-- = disqus -->
+  </body>
+</html>
+
