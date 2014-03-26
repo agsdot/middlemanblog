@@ -1,5 +1,5 @@
 ---
-title: Excited
+title: Excited to Explore Linux
 summary: Onto Linux explorations...
 tags: linux, ssd, devops
 ---
