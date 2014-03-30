@@ -38,3 +38,16 @@ Only thing is after reboot, there were some driver issues and conflicts. I don't
 
 And then again, ubuntu has wifi drivers working out of the box I think for macbook. I'd really like to get them working on archlinux.
 
+*Update 3/30*
+
+I got wifi to work finally, that was late yesterday!!!! And consistently!!!!
+
+How?  I followed the http://codylittlewood.com/ instructions to the nines, I got it working with the b43 drivers, the open source stuff vs the broadcom-wl ones. Man, dhcpcd vs NetworkManager.  Follow instructions completely and disable possibly conflicting services. Interesting.
+
+Anyhow, on the way there, I reinstalled arch, got pretty familiar with tarball commands of xzf xjf or xJf for gz bz2 or xz files. And got familiar with cgdisk.  Fun stuffs, in all sincerety. I feel my commandlinefu is growing.
+
+Man, today, also what I did I got me some git ssh keys setup for github wrapping stuff around startx with ssh-agent and got rbenv working.
+
+I think I'm ready to start doing some development on this new box. Linux and all. With pacman, git 1.9 (vs older versions on a mac), a newer bash (4.3), not that it makes a difference, but good to know.
+
+Seems near ready to roll!!!
